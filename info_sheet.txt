@@ -1,0 +1,60 @@
+========================================
+CS1520 Assignment Information Sheet
+----------------------------------------
+
+You must submit an information sheet with every assignment. Also be sure
+to submit all materials following the procedures described on the
+submission procedures page.
+
+Name:  Gabriel Badillo
+
+Lecture section:  1100
+
+Recitation day and time:  Friday, 3:00-3:50pm
+
+Assignment #:  3
+
+Program due date:  4/5/2022
+
+Handed in date:  4/5/2022
+
+Source code file name(s):
+chat.py
+
+
+
+
+
+
+Other file name(s) (if relevant):
+models.py
+style.css
+script.js
+base.html
+chatRoom.html
+login.html
+main.html
+register.html
+
+Does your project run without error?: no
+
+If not, what is/are the error(s) and which parts of your program run
+correctly?:
+Sending a message in a chatroom causes a bad request error. You can still send messages, but you have to send it, click the back arrow on the top left
+of the browser and refresh the page.
+Everything else works correctly
+
+
+
+
+
+
+Additional comments to the grader:
+Logout link will always be on the top right of the page
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block body %}
+<head>
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<h1>{{ room.name }}</h1>
+<div class="page">
+    <a href="{{ url_for('leave_room') }}">leave room</a>
+    <ul class="messages" id="list">
+        {% for m in room.messages %}
+            <li><b>{{m.author.name}}:</b> {{ m.content }}
+        {% endfor %}
+    </ul>
+</div>
+<form method="post" action="{{ url_for('post_message', room=room.name) }}">
+    <input type="text" id="message" name="message">
+    <div class="actions"><input type="submit" value="Enter" id="theButton"></div>
+</form>
+{% endblock %}

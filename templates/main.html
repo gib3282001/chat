@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="page">
+    <form action="{{ url_for('create_chat_room') }}" method="post">
+        Create New Chat Room:
+        <input type="Text" name="roomName" size="30">
+        <div class="actions"><input type="submit" value="Enter"></div>
+    </form>
+    <ul>
+        {% for c in chatRooms %}
+            <li><a href="{{ url_for('enter_chat_room', room=c.name) }}">{{ c.name }}</a> // <a href="{{ url_for('delete_chat_room', room=c.name) }}">delete room</a>
+        {% else %}
+            <li>No chat rooms so far...
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
